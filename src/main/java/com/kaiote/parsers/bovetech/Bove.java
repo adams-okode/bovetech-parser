@@ -15,6 +15,13 @@ public class Bove {
 
     private Meter meter;
 
+    /**
+     * 
+     * @param meterHex
+     * @param meterId
+     * @param communicationProtocol
+     * @throws MessageLengthException
+     */
     public Bove(String meterHex, String meterId, CommunicationProtocol communicationProtocol)
             throws MessageLengthException {
         meter = new Meter(meterHex, meterId, communicationProtocol);
@@ -22,5 +29,16 @@ public class Bove {
             SigfoxHandler handler = new SigfoxHandler(meter);
             this.meter = handler.loadMeter();
         }
+    }
+
+
+    public static void main(String[] args) {
+        try {
+            Bove bove = new Bove("6812563413016801020000d3", "242352", CommunicationProtocol.SIGFOX);
+            System.out.println(bove.getMeter());
+        } catch (MessageLengthException e) {
+            e.printStackTrace();
+        }
+
     }
 }
