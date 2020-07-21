@@ -41,15 +41,16 @@ public Bove(String meterHex, String meterId, CommunicationProtocol communication
 ```
 
 Meter Object
-|---	            |---	|
-|   key	            |   String	|
-|   deviceId	    |   String	|
-|   meterHex	    |   String	|
-|   protocol	    |   SIGFOX, LORA	|
-|   sendingInterVal	|   Integer:minutes	|
-|   meterReading	|   Double:Litres	|
+|                   |                           |
+|---	            |---	                    |
+|   key	            |   String	                |
+|   deviceId	    |   String	                |
+|   meterHex	    |   String	                |
+|   protocol	    |   SIGFOX, LORA	        |
+|   sendingInterVal	|   Integer:minutes	        |
+|   meterReading	|   Double:Litres	        |
 |   alerts	        |  Low Battery Alarm,Empty Pipe Alar,Reverse Flow Alarm,Over Range Alarm,Over Temperature Alarm,EEPROM error,Transducer In Error,Transducer Out Error 	|
-|   type	        | BECOX,B91VW 	|
+|   type	        | BECOX,B91VW 	            |
 |   valveState      | OPENED,CLOSED,VALVERROR  	|
 
 
