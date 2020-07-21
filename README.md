@@ -23,9 +23,9 @@ mvn clean install
 Bove bove = new Bove("6812563413016801020000d3", "242352", CommunicationProtocol.SIGFOX);
 Meter meter = bove.getMeter();
 
-meter.getMeterReading();//13345612
-meter.getSendingInterVal();//360
-meter.getAlerts();//["Empty Pipe Alarm"]
+meter.getMeterReading();// 13345612
+meter.getSendingInterVal();// 360
+meter.getAlerts();// ["Empty Pipe Alarm"]
 ```
 
 # API 
@@ -43,14 +43,14 @@ public Bove(String meterHex, String meterId, CommunicationProtocol communication
 Meter Object
 |                   |                                       |
 |---	            |---	                                |
-|   key	            |   ``` java String ```	                |
-|   deviceId	    |   ``` java String ```	                |
-|   meterHex	    |   ``` java String ```	                |
-|   protocol	    |   ``` java SIGFOX, LORA ```	        |
-|   sendingInterVal	|   ``` java Integer:minutes ```	    |
-|   meterReading	|   ``` java Double:Litres ```	        |
-|   alerts	        |  ```bash Low Battery Alarm, Empty Pipe Alar, Reverse Flow Alarm,Over Range Alarm,Over Temperature Alarm, EEPROM error, Transducer In Error, Transducer Out Error```	|
-|   type	        | ```java BECOX,B91VW ``` 	            |
-|   valveState      | ```java OPENED,CLOSED,VALVERROR ```  	|
+|   key	            |   ```  String ```	                |
+|   deviceId	    |   ```  String ```	                |
+|   meterHex	    |   ```  String ```	                |
+|   protocol	    |   ```  SIGFOX, LORA ```	        |
+|   sendingInterVal	|   ```  Integer:minutes ```	    |
+|   meterReading	|   ```  Double:Litres ```	        |
+|   alerts	        |  ```Low Battery Alarm, Empty Pipe Alar, Reverse Flow Alarm,Over Range Alarm,Over Temperature Alarm, EEPROM error, Transducer In Error, Transducer Out Error```	|
+|   type	        | ``` BECOX,B91VW ``` 	            |
+|   valveState      | ``` OPENED,CLOSED,VALVERROR ```  	|
 
 
