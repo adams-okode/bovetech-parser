@@ -5,7 +5,7 @@ Works with BECO X and B91 VW (Prepaid Meter)
 - Clone repo and install to local repository
 
 ```bash
-    mvn clean install
+mvn clean install
 ```
 
 - Add to pom.xml
@@ -41,16 +41,16 @@ public Bove(String meterHex, String meterId, CommunicationProtocol communication
 ```
 
 Meter Object
-|                   |                           |
-|---	            |---	                    |
-|   key	            |   String	                |
-|   deviceId	    |   String	                |
-|   meterHex	    |   String	                |
-|   protocol	    |   SIGFOX, LORA	        |
-|   sendingInterVal	|   Integer:minutes	        |
-|   meterReading	|   Double:Litres	        |
-|   alerts	        |  Low Battery Alarm,Empty Pipe Alar,Reverse Flow Alarm,Over Range Alarm,Over Temperature Alarm,EEPROM error,Transducer In Error,Transducer Out Error 	|
-|   type	        | BECOX,B91VW 	            |
-|   valveState      | OPENED,CLOSED,VALVERROR  	|
+|                   |                                       |
+|---	            |---	                                |
+|   key	            |   ``` java String ```	                |
+|   deviceId	    |   ``` java String ```	                |
+|   meterHex	    |   ``` java String ```	                |
+|   protocol	    |   ``` java SIGFOX, LORA ```	        |
+|   sendingInterVal	|   ``` java Integer:minutes ```	    |
+|   meterReading	|   ``` java Double:Litres ```	        |
+|   alerts	        |  ```bash Low Battery Alarm, Empty Pipe Alar, Reverse Flow Alarm,Over Range Alarm,Over Temperature Alarm, EEPROM error, Transducer In Error, Transducer Out Error```	|
+|   type	        | ```java BECOX,B91VW ``` 	            |
+|   valveState      | ```java OPENED,CLOSED,VALVERROR ```  	|
 
 
