@@ -25,9 +25,6 @@ jobs:
           java-version: 1.8
 
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
-
-      - name: Publish to GitHub Packages Apache Maven
-        run: mvn deploy
-        env:
-          GITHUB_TOKEN: ${{ github.token }} # GITHUB_TOKEN is the default env for the password
+        run: |
+          mvn -B package --file pom.xml
+          mvn deploy -Dregistry=https://maven.pkg.github.com/adams-okode -Dtoken=${{ github.token }}
