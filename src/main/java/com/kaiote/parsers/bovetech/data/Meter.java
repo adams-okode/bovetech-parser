@@ -36,10 +36,11 @@ public class Meter {
 
     private ValveState valveState;
 
-    public Meter(String meterHex, String meterId, CommunicationProtocol communicationProtocol) {
+    public Meter(String meterHex, String meterId, CommunicationProtocol communicationProtocol, MeterType meterType){
         this.meterHex = meterHex;
         this.deviceId = meterId;
         this.protocol = communicationProtocol;
+        this.type = meterType;
     }
 
 }

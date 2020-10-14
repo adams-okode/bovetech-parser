@@ -35,7 +35,7 @@ meter.getAlerts();// ["Empty Pipe Alarm"]
 * @param meterId
 * @param communicationProtocol
 * @throws MessageLengthException
-  */
+*/
 public Bove(String meterHex, String meterId, CommunicationProtocol communicationProtocol)
             throws MessageLengthException
 ```
@@ -49,7 +49,7 @@ Meter Object
 |   protocol	    |   ```  SIGFOX, LORA ```	        |
 |   sendingInterVal	|   ```  Integer:minutes ```	    |
 |   meterReading	|   ```  Double:Litres ```	        |
-|   alerts	        |  ```Low Battery Alarm, Empty Pipe Alar, Reverse Flow Alarm,Over Range Alarm,Over Temperature Alarm, EEPROM error, Transducer In Error, Transducer Out Error```	|
+|   alerts	        |  ``` Low Battery Alarm, Empty Pipe Alar, Reverse Flow Alarm,Over Range Alarm,Over Temperature Alarm, EEPROM error, Transducer In Error, Transducer Out Error```	|
 |   type	        | ``` BECOX,B91VW ``` 	            |
 |   valveState      | ``` OPENED,CLOSED,VALVERROR ```  	|
 

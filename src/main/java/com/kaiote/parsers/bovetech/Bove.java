@@ -2,6 +2,7 @@ package com.kaiote.parsers.bovetech;
 
 import com.kaiote.parsers.bovetech.data.Meter;
 import com.kaiote.parsers.bovetech.enums.CommunicationProtocol;
+import com.kaiote.parsers.bovetech.enums.MeterType;
 import com.kaiote.parsers.bovetech.exceptions.MessageLengthException;
 import com.kaiote.parsers.bovetech.utils.SigfoxHandler;
 
@@ -22,23 +23,22 @@ public class Bove {
      * @param communicationProtocol
      * @throws MessageLengthException
      */
-    public Bove(String meterHex, String meterId, CommunicationProtocol communicationProtocol)
+    public Bove(String meterHex, String meterId, CommunicationProtocol communicationProtocol, MeterType meterType)
             throws MessageLengthException {
-        meter = new Meter(meterHex, meterId, communicationProtocol);
+        meter = new Meter(meterHex, meterId, communicationProtocol, meterType);
         if (communicationProtocol.equals(CommunicationProtocol.SIGFOX)) {
             SigfoxHandler handler = new SigfoxHandler(meter);
             this.meter = handler.loadMeter();
         }
     }
 
+    // public static void main(String[] args) {
+    //     try {
+           
+    //         System.out.println(bove.getMeter());
+    //     } catch (MessageLengthException e) {
+    //         e.printStackTrace();
+    //     }
 
-    public static void main(String[] args) {
-        try {
-            Bove bove = new Bove("6812563413016801020000d3", "242352", CommunicationProtocol.SIGFOX);
-            System.out.println(bove.getMeter());
-        } catch (MessageLengthException e) {
-            e.printStackTrace();
-        }
-
-    }
+    // }
 }
