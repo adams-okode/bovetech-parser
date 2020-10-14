@@ -22,15 +22,5 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
-
-
-  <distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>corp1</id>
-      <name>Corporate Repository</name>
-      <url>https://maven.pkg.github.com/adams-okode/bovetech-parser</url>
-      <layout>default</layout>
-    </repository>
-  </distributionManagement>
+  
 </project>
