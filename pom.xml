@@ -29,7 +29,7 @@
       <uniqueVersion>false</uniqueVersion>
       <id>com-adams-okode</id>
       <name>Personal Repository</name>
-      <url>https://maven.pkg.github.com/adams-okode/bovetech</url>
+      <url>https://maven.pkg.github.com/adams-okode</url>
       <layout>default</layout>
     </repository>
   </distributionManagement>
