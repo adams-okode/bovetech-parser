@@ -1,10 +1,10 @@
-package com.kaiote.parsers.bovetech;
+package com.kaiote.parsers;
 
-import com.kaiote.parsers.bovetech.data.Meter;
-import com.kaiote.parsers.bovetech.enums.CommunicationProtocol;
-import com.kaiote.parsers.bovetech.enums.MeterType;
-import com.kaiote.parsers.bovetech.exceptions.MessageLengthException;
-import com.kaiote.parsers.bovetech.utils.SigfoxHandler;
+import com.kaiote.parsers.data.Meter;
+import com.kaiote.parsers.enums.CommunicationProtocol;
+import com.kaiote.parsers.enums.MeterType;
+import com.kaiote.parsers.exceptions.MessageLengthException;
+import com.kaiote.parsers.utils.SigfoxHandler;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import lombok.Setter;
 
 @Getter(value = AccessLevel.PUBLIC)
 @Setter(value = AccessLevel.PUBLIC)
-public class Bove {
+public class BoveTech {
 
     private Meter meter;
 
@@ -23,7 +23,7 @@ public class Bove {
      * @param communicationProtocol
      * @throws MessageLengthException
      */
-    public Bove(String meterHex, String meterId, CommunicationProtocol communicationProtocol, MeterType meterType)
+    public BoveTech(String meterHex, String meterId, CommunicationProtocol communicationProtocol, MeterType meterType)
             throws MessageLengthException {
         meter = new Meter(meterHex, meterId, communicationProtocol, meterType);
         if (communicationProtocol.equals(CommunicationProtocol.SIGFOX)) {

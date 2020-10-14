@@ -1,4 +1,4 @@
-package com.kaiote.parsers.bovetech.enums;
+package com.kaiote.parsers.enums;
 
 public enum ValveState {
 

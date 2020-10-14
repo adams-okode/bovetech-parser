@@ -1,4 +1,4 @@
-package com.kaiote.parsers.bovetech.interfaces;
+package com.kaiote.parsers.interfaces;
 
 public interface NetworkHandler<T> {
 

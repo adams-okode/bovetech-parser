@@ -1,4 +1,4 @@
-package com.kaiote.parsers.bovetech;
+package com.kaiote.parsers;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

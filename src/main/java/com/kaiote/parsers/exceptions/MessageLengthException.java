@@ -1,4 +1,4 @@
-package com.kaiote.parsers.bovetech.exceptions;
+package com.kaiote.parsers.exceptions;
 
 public class MessageLengthException extends Exception {
     /**

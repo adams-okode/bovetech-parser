@@ -1,8 +1,8 @@
-package com.kaiote.parsers.bovetech.data;
+package com.kaiote.parsers.data;
 
-import com.kaiote.parsers.bovetech.enums.CommunicationProtocol;
-import com.kaiote.parsers.bovetech.enums.MeterType;
-import com.kaiote.parsers.bovetech.enums.ValveState;
+import com.kaiote.parsers.enums.CommunicationProtocol;
+import com.kaiote.parsers.enums.MeterType;
+import com.kaiote.parsers.enums.ValveState;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

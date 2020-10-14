@@ -1,6 +1,6 @@
-package com.kaiote.parsers.bovetech.helpers;
+package com.kaiote.parsers.helpers;
 
-import com.kaiote.parsers.bovetech.exceptions.MessageLengthException;
+import com.kaiote.parsers.exceptions.MessageLengthException;
 
 import lombok.AccessLevel;
 import lombok.Getter;

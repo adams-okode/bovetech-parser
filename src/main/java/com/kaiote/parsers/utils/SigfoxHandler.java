@@ -1,10 +1,10 @@
-package com.kaiote.parsers.bovetech.utils;
+package com.kaiote.parsers.utils;
 
-import com.kaiote.parsers.bovetech.data.Meter;
-import com.kaiote.parsers.bovetech.enums.ValveState;
-import com.kaiote.parsers.bovetech.exceptions.MessageLengthException;
-import com.kaiote.parsers.bovetech.helpers.Separator;
-import com.kaiote.parsers.bovetech.interfaces.NetworkHandler;
+import com.kaiote.parsers.data.Meter;
+import com.kaiote.parsers.enums.ValveState;
+import com.kaiote.parsers.exceptions.MessageLengthException;
+import com.kaiote.parsers.helpers.Separator;
+import com.kaiote.parsers.interfaces.NetworkHandler;
 
 public class SigfoxHandler implements NetworkHandler<Meter> {
 

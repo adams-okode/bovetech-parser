@@ -11,7 +11,7 @@ mvn clean install
 - Add to pom.xml
 ```xml
 <dependency>
-    <groupId>com.kaiote.parsers.bovetech</groupId>
+    <groupId>com.kaiote.parsers</groupId>
     <artifactId>bove</artifactId>
     <packaging>jar</packaging>
     <version>1.0.1</version>
