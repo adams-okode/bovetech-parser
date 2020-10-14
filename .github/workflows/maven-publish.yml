@@ -27,4 +27,4 @@ jobs:
       - name: Build with Maven
         run: |
           mvn -B package --file pom.xml
-          mvn deploy -Dregistry=https://maven.pkg.github.com/adams-okode -Dtoken=${{ github.token }}
+          mvn deploy -Dregistry=https://maven.pkg.github.com/adams-okode -Dtoken=${{ secrets.GITHUB_TOKEN }}
