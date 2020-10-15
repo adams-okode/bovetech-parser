@@ -4,7 +4,7 @@
   <groupId>com.kaiote.parsers</groupId>
   <artifactId>bovetech</artifactId>
   <packaging>jar</packaging>
-  <version>${env.CURRENT_TAG}</version>
+  <version>1.0.3</version>
   <name>bove</name>
   <url>http://maven.apache.org</url>
 

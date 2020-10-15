@@ -36,6 +36,8 @@ public class Meter {
 
     private ValveState valveState;
 
+    private String downlinkData;
+
     public Meter(String meterHex, String meterId, CommunicationProtocol communicationProtocol, MeterType meterType){
         this.meterHex = meterHex;
         this.deviceId = meterId;

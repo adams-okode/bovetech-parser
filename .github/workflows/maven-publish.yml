@@ -3,12 +3,7 @@
 
 name: Maven Package
 on:
-  create:
-    tags:
-      - 1.0.*
-  push:
-    branches:
-      - "master"
+    
   release:
     types: [created]
 

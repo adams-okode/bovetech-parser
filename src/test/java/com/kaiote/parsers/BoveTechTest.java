@@ -37,11 +37,11 @@ public class BoveTechTest extends TestCase {
      * @throws MessageLengthException
      */
     public void testApp() throws MessageLengthException {
-        Meter actual = new BoveTech("6812563413016801020000d3", "242352", CommunicationProtocol.SIGFOX, MeterType.BECOX)
+        Meter actual = new BoveTech("6812563413016801020000d3", "242352", CommunicationProtocol.SIGFOX, MeterType.BECOX, true)
                 .getMeter();
         String[] alerts = { null };
         Meter expected = new Meter(null, "242352", "6812563413016801020000d3", MeterType.BECOX,
-                CommunicationProtocol.SIGFOX, 360, 1.3345612E7, alerts, ValveState.VALVERROR);
+                CommunicationProtocol.SIGFOX, 360, 1.3345612E7, alerts, ValveState.VALVERROR, "");
         // System.out.println(expected.toString());
         assertEquals(expected.getMeterHex(), actual.getMeterHex());
         assertEquals(expected.getMeterReading(), actual.getMeterReading());

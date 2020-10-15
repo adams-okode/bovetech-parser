@@ -23,22 +23,18 @@ public class BoveTech {
      * @param communicationProtocol
      * @throws MessageLengthException
      */
-    public BoveTech(String meterHex, String meterId, CommunicationProtocol communicationProtocol, MeterType meterType)
-            throws MessageLengthException {
+    public BoveTech(String meterHex, String meterId, CommunicationProtocol communicationProtocol, MeterType meterType,
+            Boolean valveOpen) throws MessageLengthException {
         meter = new Meter(meterHex, meterId, communicationProtocol, meterType);
         if (communicationProtocol.equals(CommunicationProtocol.SIGFOX)) {
             SigfoxHandler handler = new SigfoxHandler(meter);
             this.meter = handler.loadMeter();
         }
+
+        if (Boolean.TRUE.equals(valveOpen)) {
+            this.meter.setDownlinkData("00000404A0170055");
+        } else {
+            this.meter.setDownlinkData("00000404A0170099");
+        }
     }
-
-    // public static void main(String[] args) {
-    //     try {
-           
-    //         System.out.println(bove.getMeter());
-    //     } catch (MessageLengthException e) {
-    //         e.printStackTrace();
-    //     }
-
-    // }
 }
